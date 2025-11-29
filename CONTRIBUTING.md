@@ -1,77 +1,85 @@
-# Contributing to Apex Moves
+# Contributing to Elevate SEO
 
-Thank you for your interest in contributing to Apex Moves! This document provides guidelines for contributing to this project.
+First off, thank you for considering contributing to Elevate SEO! It's people like you that make this project better.
 
-## Development Setup
+## Code of Conduct
 
-1. Fork the repository
-2. Clone your fork: `git clone https://github.com/jaawwaddev/apex-moves`
-3. Install dependencies: `npm install`
-4. Start the dev server: `npm run dev`
+This project and everyone participating in it is governed by our Code of Conduct. By participating, you are expected to uphold this code.
 
-## Code Standards
+## How Can I Contribute?
 
-### TypeScript
-- All new code must be written in TypeScript
-- Maintain strict type safety - avoid `any` types
-- Export types and interfaces for reusable components
+### Reporting Bugs
 
-### React Components
+Before creating bug reports, please check the existing issues to avoid duplicates. When you create a bug report, include as many details as possible:
+
+- **Use a clear and descriptive title**
+- **Describe the exact steps to reproduce the problem**
+- **Provide specific examples**
+- **Describe the behavior you observed and what you expected**
+- **Include screenshots if relevant**
+- **Include your environment details** (OS, browser, Node version)
+
+### Suggesting Enhancements
+
+Enhancement suggestions are tracked as GitHub issues. When creating an enhancement suggestion, include:
+
+- **Use a clear and descriptive title**
+- **Provide a detailed description of the suggested enhancement**
+- **Explain why this enhancement would be useful**
+- **List any alternatives you've considered**
+
+### Pull Requests
+
+1. Fork the repository and create your branch from `main`
+2. If you've added code that should be tested, add tests
+3. Ensure your code follows the existing style guidelines
+4. Make sure your code lints (`npm run lint`)
+5. Format your code (`npm run format`)
+6. Write clear commit messages
+7. Submit a pull request!
+
+## Style Guidelines
+
+### Git Commit Messages
+
+- Use the present tense ("Add feature" not "Added feature")
+- Use the imperative mood ("Move cursor to..." not "Moves cursor to...")
+- Limit the first line to 72 characters
+- Reference issues and pull requests after the first line
+
+### TypeScript Style Guide
+
+- Use TypeScript features: interfaces, types, enums
+- Avoid `any` types - be explicit
 - Use functional components with hooks
-- Follow the single responsibility principle
-- Create reusable, composable components
-- Add proper prop types with TypeScript interfaces
+- Follow naming conventions:
+  - Components: PascalCase
+  - Functions: camelCase
+  - Constants: UPPER_SNAKE_CASE
+  - Interfaces: PascalCase with 'I' prefix or descriptive name
 
-### Styling
-- Use Tailwind CSS utility classes
-- Follow the existing color token system
-- Ensure responsive design for all screen sizes
-- Test on multiple browsers
+### Component Guidelines
 
-### Code Style
-- Use 2 spaces for indentation
-- Use meaningful variable and function names
-- Add comments for complex logic
-- Keep functions small and focused
+- One component per file
+- Use functional components with TypeScript
+- Include PropTypes/Interfaces for all props
+- Keep components focused and single-purpose
+- Extract reusable logic into custom hooks
 
-## Commit Guidelines
+## Development Process
 
-Follow conventional commit format:
-
-```
-type(scope): subject
-
-body (optional)
-```
-
-**Types:**
-- `feat`: New feature
-- `fix`: Bug fix
-- `docs`: Documentation changes
-- `style`: Code style changes (formatting, etc.)
-- `refactor`: Code refactoring
-- `test`: Adding or updating tests
-- `chore`: Maintenance tasks
-
-**Example:**
-```
-feat(quote): add real-time price preview
-
-Added live updating price calculation as user fills out the quote form
-```
-
-## Pull Request Process
-
-1. Create a feature branch: `git checkout -b feat/your-feature-name`
-2. Make your changes
-3. Run type checking: `npm run type-check`
-4. Test the build: `npm run build`
-5. Commit your changes with conventional commit messages
-6. Push to your fork
-7. Create a Pull Request with a clear description
+1. **Setup**: Follow the README instructions to set up your development environment
+2. **Branch**: Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. **Develop**: Make your changes with clear, focused commits
+4. **Test**: Ensure everything works and no regressions occur
+5. **Lint**: Run `npm run lint` and fix any issues
+6. **Format**: Run `npm run format`
+7. **Commit**: Commit your changes with a descriptive message
+8. **Push**: Push to your fork
+9. **PR**: Open a Pull Request with a clear description
 
 ## Questions?
 
-Feel free to open an issue for any questions or concerns.
+Feel free to open an issue for clarification or reach out to the maintainers.
 
 Thank you for contributing!
